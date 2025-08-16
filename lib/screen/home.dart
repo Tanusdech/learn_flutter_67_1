@@ -38,11 +38,11 @@ class Home extends StatelessWidget {
           const SizedBox(height: 20),
           OutlinedButton(
             style: OutlinedButton.styleFrom(
-              foregroundColor: Colors.pinkAccent,
+              foregroundColor: const Color.fromARGB(255, 255, 255, 255),
               side: const BorderSide(color: Colors.pink, width: 2),
             ),
             onPressed: () {
-              print("Filled Button Pressed");
+              print("Outlined Button Pressed");
             },
             child: const Text(
               "Click Me",

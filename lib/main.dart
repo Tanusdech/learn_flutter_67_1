@@ -1,22 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_67_1/screen/home.dart';
+import 'package:learn_flutter_67_1/screen/item.dart';
 
 void main() {
-  // runApp(const MyApp());
-
-  // const app = MaterialApp(title:"หัวข้อ", home: Text("Hello World!"));
-  // runApp(app);
-
   runApp(
     MaterialApp(
       title: "หัวข้อ",
       home: Scaffold(
         appBar: AppBar(
           title: Text("My App"),
+          titleTextStyle: const TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
           backgroundColor: const Color.fromARGB(255, 64, 95, 251),
           centerTitle: true,
         ),
-        body: Home(),
+        body: Column(children: [Home(), SizedBox(height: 20), Item()]),
+        backgroundColor: const Color.fromARGB(255, 169, 196, 243),
       ),
     ),
   );
