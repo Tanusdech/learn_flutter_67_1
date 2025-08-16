@@ -38,7 +38,7 @@ class Home extends StatelessWidget {
           const SizedBox(height: 20),
           OutlinedButton(
             style: OutlinedButton.styleFrom(
-              foregroundColor: const Color.fromARGB(255, 255, 255, 255),
+              foregroundColor: Colors.pinkAccent,
               side: const BorderSide(color: Colors.pink, width: 2),
             ),
             onPressed: () {

@@ -17,8 +17,7 @@ void main() {
           backgroundColor: const Color.fromARGB(255, 64, 95, 251),
           centerTitle: true,
         ),
-        body: Column(children: [Home(), SizedBox(height: 20), Item()]),
-        backgroundColor: const Color.fromARGB(255, 169, 196, 243),
+        body: Item(),
       ),
     ),
   );
