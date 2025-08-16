@@ -6,52 +6,19 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      // mainAxisAlignment: MainAxisAlignment.start,
-      // mainAxisAlignment: MainAxisAlignment.center,
-      // mainAxisAlignment: MainAxisAlignment.end,
-      // mainAxisAlignment: MainAxisAlignment.spaceAround,
-      // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Container(
-          color: Colors.redAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 3,
-            ),
-          ),
+        Image.asset(
+          "assets/images/cats-8992040_1280.jpg",
+          width: 350,
+          height: 350,
         ),
-        Container(
-          color: Colors.redAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 3,
-            ),
-          ),
-        ),
-        Container(
-          color: Colors.redAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 3,
-            ),
-          ),
+        const SizedBox(height: 20),
+        Image.network(
+          "https://cdn.pixabay.com/photo/2024/02/21/11/34/ai-generated-8587505_1280.png",
+          width: 200,
+          height: 200,
         ),
       ],
     );
