@@ -5,9 +5,41 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
+    return Column(
+      // mainAxisAlignment: MainAxisAlignment.start,
+      // mainAxisAlignment: MainAxisAlignment.center,
+      // mainAxisAlignment: MainAxisAlignment.end,
+      // mainAxisAlignment: MainAxisAlignment.spaceAround,
+      // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        Container(
+          color: Colors.redAccent,
+          padding: EdgeInsets.symmetric(horizontal: 5),
+          child: Text(
+            "Hello",
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 3,
+            ),
+          ),
+        ),
+        Container(
+          color: Colors.redAccent,
+          padding: EdgeInsets.symmetric(horizontal: 5),
+          child: Text(
+            "Hello",
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 3,
+            ),
+          ),
+        ),
         Container(
           color: Colors.redAccent,
           padding: EdgeInsets.symmetric(horizontal: 5),
