@@ -5,20 +5,23 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        color: const Color.fromARGB(255, 54, 148, 242),
-        margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-        padding: EdgeInsets.all(50),
-        child: Text(
-          "Hello Flutter! Step 3",
-          style: TextStyle(
-            fontSize: 30,
-            color: const Color.fromARGB(255, 254, 254, 254),
-            fontWeight: FontWeight.bold,
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Container(
+          color: Colors.redAccent,
+          padding: EdgeInsets.symmetric(horizontal: 5),
+          child: Text(
+            "Hello",
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 3,
+            ),
           ),
         ),
-      ),
+      ],
     );
   }
 }
